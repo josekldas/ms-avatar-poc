@@ -1,0 +1,25 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+      "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=blobstorage72ocnjmphqnmw;AccountKey=mlW8ZNUGyc21PV//cIsQ592muyRHdhmlwfyIRSofynD8K+dcmd1xmbOeeRy1sStj1RK8m/Cad56o+AStyR2OVA==;EndpointSuffix=core.windows.net",
+      "FUNCTIONS_WORKER_RUNTIME": "python",
+      "AZURE_OPENAI_ENDPOINT": "https://chatwithyourdata.openai.azure.com/",
+      "AZURE_OPENAI_API_KEY": "2c0bc16a448a4fcfac4f667b0e1f9e77",
+      "AZURE_OPENAI_CHAT_DEPLOYMENT" : "gpt-35-turbo-16k",
+      "AZURE_OPENAI_EMBEDDINGS_DEPLOYMENT" : "text-embedding-ada-002",
+      "AZURE_OPENAI_API_VERSION" : "2023-07-01-preview",
+      "AZURE_SEARCH_ENDPOINT": "https://cog-search-72ocnjmphqnmw.search.windows.net",
+      "AZURE_SEARCH_API_KEY": "LW31Oer7U8kHwAjOklFg3HWk9w4Z54o4OuPc59BNLUAzSeDFCCsW",
+      "AZURE_SEARCH_INDEX": "products",
+      "AZURE_SPEECH_REGION": "East US",
+      "AZURE_SPEECH_API_KEY": "a3360e8fc8a340e38f9809796a72ee82",
+      "TEXT_ANALYTICS_ENDPOINT": "https://eastus2.api.cognitive.microsoft.com/",
+      "TEXT_ANALYTICS_KEY": "80eb7711c6b445ca853569ae64026303",
+      "BLOB_SAS_URL": "https://blobstorage72ocnjmphqnmw.blob.core.windows.net/product-images?sp=r&st=2023-11-22T18:49:46Z&se=2023-11-23T02:49:46Z&spr=https&sv=2022-11-02&sr=c&sig=z5v5mNobopIkoFuRlYbiXvaftEoJtp2wrBsh9vx25PY%3D",
+      "SQL_DB_SERVER": "sql-server-72ocnjmphqnmw.database.windows.net",
+      "SQL_DB_USER": "mysql",
+      "SQL_DB_PASSWORD": "Mobiik2023",
+      "SQL_DB_NAME": "OutdoorEquipmentShop",
+      "ICE_CONNECTION_STRING": "endpoint=https://communicationserviceazavatar.unitedstates.communication.azure.com/;accesskey=pR0Zovw/zz4tLrSjJkI5mcnnahArR3mneqSJZsq9lwwbDBw5xXlJMBzeuETbcYQVoRAzpoNVT7ovc13iXNyjtg=="
+    }
+  }
