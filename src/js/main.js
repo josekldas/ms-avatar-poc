@@ -36,7 +36,7 @@ var speechSynthesizer
 var peerConnection
 var previousAnimationFrameTimestamp = 0
 
-messages = [{ "role": "system", "content": system_prompt }];
+messages = [{ "role": "system", "content": system_prompt },{ "role": "assistant", "content": "Hola José, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso." } ];
 
 function removeDocumentReferences(str) {
   // Regular expression to match [docX]
