@@ -24,7 +24,7 @@ let IceServerCredential
 const TalkingAvatarCharacter = "lisa"
 const TalkingAvatarStyle = "casual-sitting"
 
-supported_languages = ["en-US", "de-DE", "zh-CN", "ar-AE"] // The language detection engine supports a maximum of 4 languages
+supported_languages = ["en-US", "es-ES"] // The language detection engine supports a maximum of 4 languages
 
 const BackgroundColor = '#FFFFFFFF'
 
@@ -243,7 +243,7 @@ window.startSession = () => {
 async function greeting() {
   addToConversationHistory("Hola, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso. ¡Estoy aquí para ayudarte a mostrar lo mejor de ti", "light")
 
-  let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='es-US'><voice xml:lang='es-US' xml:gender='Female' name='en-US-JennyMultilingualNeural'>Hola, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso. ¡Estoy aquí para ayudarte a mostrar lo mejor de ti!</voice></speak>";
+  let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='es-ES'><voice xml:lang='es-ES' xml:gender='Female' name='en-US-JennyMultilingualNeural'>Hola, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso. ¡Estoy aquí para ayudarte a mostrar lo mejor de ti!</voice></speak>";
 
   speechSynthesizer.speakSsmlAsync(spokenText, (result) => {
     if (result.reason === SpeechSDK.ResultReason.SynthesizingAudioCompleted) {
