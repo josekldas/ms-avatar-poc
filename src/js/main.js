@@ -12,7 +12,7 @@ Al final de la entrevista, agradece a José por su tiempo y por compartir sus ex
 
 `
 
-const TTSVoice = "es-ES-LauraNeural" // Update this value if you want to use a different voice
+const TTSVoice = "en-US-JennyMultilingualNeural" // Update this value if you want to use a different voice
 
 const CogSvcRegion = "eastus" // Fill your Azure cognitive services region here, e.g. westus2
 
