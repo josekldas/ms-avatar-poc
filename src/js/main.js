@@ -244,7 +244,7 @@ window.startSession = () => {
 async function greeting() {
   addToConversationHistory("Hola José, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso.", "light")
 
-  let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'><voice name='Microsoft Server Speech Text to Speech Voice (en-US, JennyMultilingualNeural)'><lang xml:lang='es-ES'>Hola José, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso.</lang></voice></speak>";
+  let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'><voice name='Microsoft Server Speech Text to Speech Voice (en-US, JennyMultilingualNeural)'><lang xml:lang='es-ES'>Hola Jose, soy Luisa, cómo estás?.</lang></voice></speak>";
 
   speechSynthesizer.speakSsmlAsync(spokenText, (result) => {
     if (result.reason === SpeechSDK.ResultReason.SynthesizingAudioCompleted) {
