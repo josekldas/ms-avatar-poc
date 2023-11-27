@@ -241,9 +241,9 @@ window.startSession = () => {
 }
 
 async function greeting() {
-  addToConversationHistory("Hello, my name is Luisa. How can I help you?", "light")
+  addToConversationHistory("Hola, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso. ¡Estoy aquí para ayudarte a mostrar lo mejor de ti", "light")
 
-  let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-US-JennyNeural'>Hello, my name is Lisa. How can I help you?</voice></speak>"
+  let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'><voice xml:lang='en-US' xml:gender='Female' name='en-US-JennyNeural'>Hola, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso. ¡Estoy aquí para ayudarte a mostrar lo mejor de ti</voice></speak>"
   speechSynthesizer.speakSsmlAsync(spokenText, (result) => {
     if (result.reason === SpeechSDK.ResultReason.SynthesizingAudioCompleted) {
       console.log("Speech synthesized to speaker for text [ " + spokenText + " ]. Result ID: " + result.resultId)
