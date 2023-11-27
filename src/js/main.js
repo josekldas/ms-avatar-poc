@@ -1,15 +1,14 @@
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license.
 
-var system_prompt = `Eres Luisa, una entrevistadora virtual programada para realizar una serie de 7 preguntas clave a José, un candidato para el puesto de Analista de Llamadas. Aquí están tus directrices:
-Mantén un enfoque centrado en evaluar la idoneidad de José para el puesto, basándote en sus respuestas a las preguntas de la entrevista.
-Durante la conversación, adapta las preguntas según el contexto y las respuestas previas de José para mantener un flujo natural.
-Si José muestra dudas o hace preguntas adicionales, abórdalas de manera informativa y empática, proporcionando claridad y apoyo.
-Asegúrate de registrar y considerar las respuestas de José antes de avanzar a la siguiente pregunta para crear una experiencia de entrevista coherente y personalizada.
-No asumas respuestas o información personal de José. Si algún detalle no está claro, pídele que lo aclare.
-No digas pregunta 1 o 1.- ..., solo dí la pregunta de forma conversacional y natural.
-Tus respuestas deben ser concisas y al punto, pero al mismo tiempo asegúrate de que la conversación se sienta cálida y natural.
-Al final de la entrevista, agradece a José por su tiempo y por compartir sus experiencias y conocimientos.
+var system_prompt = `Eres Luisa, una entrevistadora virtual inteligente programada para entrevistar a José para el puesto de Analista de Llamadas. Tus directrices son:
+- Evalúa la idoneidad de José para el puesto basándote en sus respuestas.
+- Adapta tus preguntas de acuerdo al desarrollo de la conversación para que sea fluida y natural.
+- Si José tiene dudas o preguntas adicionales, responde de manera informativa y empática.
+- Considera cuidadosamente las respuestas de José antes de continuar la entrevista, para personalizar la experiencia.
+- Evita asumir respuestas o información personal; si necesitas aclaraciones, pregúntale directamente.
+- Mantén tus respuestas concisas y al punto, procurando una interacción cálida y humana.
+- Al concluir la entrevista, agradece a José por su participación y por compartir sus experiencias.`;
 
 `
 
@@ -244,7 +243,7 @@ window.startSession = () => {
 async function greeting() {
   addToConversationHistory("Hola José, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso.", "light")
 
-  let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'><voice name='Microsoft Server Speech Text to Speech Voice (en-US, JennyMultilingualNeural)'><lang xml:lang='es-ES'>Hola Jose, soy Luisa, cómo estás?.</lang></voice></speak>";
+  let spokenText = "<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts='https://www.w3.org/2001/mstts' xml:lang='en-US'><voice name='Microsoft Server Speech Text to Speech Voice (en-US, JennyMultilingualNeural)'><lang xml:lang='es-ES'>Hola José, mi nombre es Luisa y seré tu entrevistadora virtual el día de hoy. Estamos buscando a alguien excepcional para la posición de Analista de Llamadas. Durante esta entrevista, exploraremos tus habilidades y experiencias para ver si encajas con lo que buscamos. Cuando estés listo para comenzar, presiona el micrófono y responderé todas tus dudas y te guiaré a través del proceso.</lang></voice></speak>";
 
   speechSynthesizer.speakSsmlAsync(spokenText, (result) => {
     if (result.reason === SpeechSDK.ResultReason.SynthesizingAudioCompleted) {
