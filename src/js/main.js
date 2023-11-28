@@ -21,7 +21,7 @@ let IceServerCredential
 
 // This is the only avatar which supports live streaming so far, please don't modify
 const TalkingAvatarCharacter = "lisa"
-const TalkingAvatarStyle = "graceful-sitting"
+const TalkingAvatarStyle = "casual-sitting"
 
 supported_languages = ["en-US", "es-ES"] // The language detection engine supports a maximum of 4 languages
 
