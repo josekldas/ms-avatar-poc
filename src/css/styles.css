@@ -94,7 +94,7 @@ body {
 }
 
 .main {
-    background: linear-gradient(180deg, rgba(43, 78, 98, 0.09) 0%, rgba(34, 63, 81, 0.80) 18.23%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.80) 18.23%);
     padding: 1em;
     padding-bottom: 0px;
     height: 100%;
