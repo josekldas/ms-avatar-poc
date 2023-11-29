@@ -36,7 +36,7 @@ place_orders = False
 functions = [
     {
         "name": "get_bonus_points",
-        "description": "Check the amount of customer bonus / loyalty points",
+        "description": "Check the amount of customer bonus points/ loyalty points",
         "parameters": {
             "type": "object",
             "properties": {
